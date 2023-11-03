@@ -11,7 +11,7 @@ Comment.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    owner_id: {
+    account_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
