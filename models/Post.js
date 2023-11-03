@@ -12,7 +12,7 @@ Post.init(
       autoIncrement: true,
     },
     owner_id: {
-      type: DataTypes.int,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     content: {
