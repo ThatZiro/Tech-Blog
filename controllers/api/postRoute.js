@@ -1,5 +1,5 @@
 router = require('express').Router();
-const { Post, Account } = require('../../models');
+const { Post, Account, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // ROUTE: /api/post
@@ -38,7 +38,6 @@ router.put('/:id', withAuth, async (req, res) => {
 
 // Delete a post
 router.delete('/:id', withAuth, async (req, res) => {
-  console.log('Trying to delete');
   try {
     // Delete all comments related to the post
     await Comment.destroy({
@@ -48,7 +47,7 @@ router.delete('/:id', withAuth, async (req, res) => {
     const deletedPost = await Post.destroy({
       where: { id: req.params.id },
     });
-console.log('Deleted comments and');
+
     if (!deletedPost) {
       res.status(404).json({ message: 'No post found with that id!' });
       return;

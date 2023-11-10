@@ -38,7 +38,10 @@ a:hover {
   line-height: normal;
 }
 
-#Input-Comment {
+#Input-Comment,
+#Input-Title,
+#Input-Content,
+#Input-Tags {
   background-color: transparent;
   width: 100%;
 }
