@@ -14,6 +14,19 @@ Post.init(
     account_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      references: {
+        model: 'account',
+        key: 'id',
+      },
+    },
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    date: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: sequelize.fn('NOW'),
     },
     content: {
       type: DataTypes.STRING,

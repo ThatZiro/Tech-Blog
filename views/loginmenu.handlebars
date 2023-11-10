@@ -36,7 +36,7 @@
               </clipPath>
             </defs>
           </svg>
-          <input class='form-input' type='text' placeholder='username' />
+          <input id='Input-Username' class='form-input' type='text' placeholder='username' />
         </div>
         <div class='input-field'>
           <svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 16 21' fill='none'>
@@ -52,13 +52,15 @@
               </clipPath>
             </defs>
           </svg>
-          <input class='form-input' type='text' placeholder='password' />
+          <input id='Input-Password' class='form-input' type='password' placeholder='password' />
         </div>
       </div>
       <div class='submit'>
-        <input class='form-button' type='submit' />
-        <a>Not a member?</a>
+        <button id='Login-Button' class='form-button'>LOGIN</button>
+        <a href='/register'>Not a member?</a>
       </div>
     </form>
   </div>
 </div>
+
+<script src='./js/login.js'></script>

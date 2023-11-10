@@ -1,0 +1,49 @@
+<header>
+  <h1 class='logo'>TECHBLOG</h1>
+  <nav>
+    <a href='/'>Home</a>
+    <a href='/dashboard'>Dashboard</a>
+    {{#if logged_in}}
+      <a id='logout'>Logout</a>
+    {{else}}
+      <a href='/login'>Login</a>
+    {{/if}}
+  </nav>
+</header>
+
+<div class='post-container'>
+  <div class='post new-post'>
+    <div class='post-header'>
+      <div class='post-user'>
+        <h2>Add a new post</h2>
+      </div>
+    </div>
+    <div class=''>
+      <div class='add-comment-title'>
+        <input id='Input-Title' class='form-input' type='test' placeholder='title' />
+      </div>
+    </div>
+    <div class=''>
+      <div class='add-comment-title'>
+        <input id='Input-Content' class='form-input' type='test' placeholder='content' />
+      </div>
+    </div>
+    <div class=''>
+      <div class='add-comment-title'>
+        <input id='Input-Tags' class='form-input' type='test' placeholder='tags' />
+      </div>
+    </div>
+    <div class='comment'>
+      <div class='hide-container'>
+        <button id='Add-Post' class='hide-comment'>Add Post</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class='container'>
+  <div class='scrolling-div'>
+  </div>
+</section>
+
+<script src='/js/addPost.js'></script>

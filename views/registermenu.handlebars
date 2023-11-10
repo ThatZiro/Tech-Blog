@@ -36,7 +36,7 @@
               </clipPath>
             </defs>
           </svg>
-          <input class='form-input' type='text' placeholder='username' />
+          <input id='Input-Username' class='form-input' type='text' placeholder='username' />
         </div>
         <div class='input-field'>
           <svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 18 21' fill='none'>
@@ -52,7 +52,7 @@
               </clipPath>
             </defs>
           </svg>
-          <input class='form-input' type='text' placeholder='email' />
+          <input id='Input-Email' class='form-input' type='text' placeholder='email' />
         </div>
         <div class='input-field'>
           <svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 16 21' fill='none'>
@@ -68,7 +68,7 @@
               </clipPath>
             </defs>
           </svg>
-          <input class='form-input' type='text' placeholder='password' />
+          <input id='Input-Password' class='form-input' type='text' placeholder='password' />
         </div>
         <div class='input-field'>
           <svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 16 21' fill='none'>
@@ -84,13 +84,15 @@
               </clipPath>
             </defs>
           </svg>
-          <input class='form-input' type='text' placeholder='confirm' />
+          <input id='Input-Confirm' class='form-input' type='text' placeholder='confirm' />
         </div>
       </div>
       <div class='submit'>
-        <input class='form-button' type='submit' />
-        <a>Already a member?</a>
+        <button id='Register-Button' class='form-button'>Submit</button>
+        <a href='/login'>Already a member?</a>
       </div>
     </form>
   </div>
 </div>
+
+<script src='./js/signup.js'></script>

@@ -14,10 +14,18 @@ Comment.init(
     account_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      references: {
+        model: 'account',
+        key: 'id',
+      },
     },
     post_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      references: {
+        model: 'post',
+        key: 'id',
+      },
     },
     content: {
       type: DataTypes.STRING,
